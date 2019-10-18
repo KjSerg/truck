@@ -1,0 +1,24 @@
+.conditions {
+
+  &-section {
+    padding-top: 10.9rem;
+    padding-bottom: 10rem;
+    .manager-decorations-title {
+      transform: rotate(-90deg);
+      right: -4.5rem;
+      @media (max-width: 410px) {
+        display: none;
+      }
+    }
+  }
+  &__description {
+    ul li {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 4rem;
+  }
+
+}

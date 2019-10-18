@@ -1,0 +1,62 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: 35rem;
+  width: 100%;
+  //padding-left: 4rem;
+  margin-right: auto;
+  @media (max-width: 767px) {
+    margin-right:2rem;
+  }
+  @media (max-width: 540px) {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 400px) {
+    max-width: 7rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  &-title {
+    strong {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #05153a;
+      font-family: 'GothamPro-Black';
+      font-size: 2.4rem;
+      font-weight: 400;
+      //text-transform: uppercase;
+      letter-spacing: 0.06rem;
+    }
+    color: #05153a;
+    font-family: "GothamPro";
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.024rem;
+    line-height: 1.5rem;
+    @media (max-width: 400px) {
+      display: none;
+    }
+    span {
+      //@media (max-width: 540px) {
+      //  display: none;
+      //}
+    }
+  }
+
+  &__img {
+    width: 14rem;
+    margin-right: 1rem;
+    @media (max-width: 450px) {
+      width: 19rem;
+    }
+
+    //height: 3.5rem;
+    img {
+      //max-width: 100%;
+    }
+  }
+
+}

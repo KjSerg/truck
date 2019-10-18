@@ -1,0 +1,37 @@
+@mixin row() {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin col($count, $margin) {
+  width: calc(#{(100 / $count) + unquote("%")} - #{$margin / 2});
+}
+
+@mixin mq($width, $type: max) {
+  $breakpoints: (
+          "phone":        400px,
+          "phone-wide":   480px,
+          "phablet":      560px,
+          "tablet-small": 640px,
+          "tablet":       768px,
+          "tablet-wide":  1024px,
+          "desktop":      1248px,
+          "desktop-wide": 1440px
+  );
+
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin verticalAlign() {
+  top: 50%;
+  transform: translateY(-50%);
+}

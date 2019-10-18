@@ -1,0 +1,151 @@
+.header {
+  position: relative;
+
+  display: flex;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  .container {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &-wrap {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      justify-content: space-between;
+    }
+    //@media (max-width: 540px) {
+    //  flex-direction: column;
+    //}
+  }
+
+  &-button {
+    @media (max-width: 767px) {
+      width: 2rem;
+      border-radius: 50%;
+      height: 2rem;
+      padding: 3rem;
+    }
+    @media (max-width: 540px) {
+      margin-left: auto;
+    }
+
+    .zmdi {
+      display: none;
+      @media (max-width: 767px) {
+        display: inline-block;
+        font-size: 2rem;
+      }
+    }
+
+    span {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 540px) {
+      //width: 100%;
+      //justify-content: space-around;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+    @media (max-width: 400px) {
+      flex-direction: row;
+    }
+    &__icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 2.5rem;
+
+      width: 5.8rem;
+      height: 5.8rem;
+
+      color: #09b952;
+      font-size: 2rem;
+      font-weight: 400;
+
+      text-decoration: none;
+
+
+      border-radius: 50%;
+      border: 1px solid rgba(#09b952, 0.2);
+      transition: 0.5s ease;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        top: 0.4rem;
+        left: 0.4rem;
+
+        width: calc(100% - 0.8rem);
+        height: calc(100% - 0.8rem);
+
+        border-radius: 50%;
+        border: 1px solid #09b952;
+        transition: 0.5s ease;
+      }
+
+      &:hover {
+        border: 1px solid rgba(#09b952, 1);
+        &:after {
+          border: 1px solid rgba(#09b952, 0.2);
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin-right: 6.8rem;
+      @media (max-width: 540px) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 400px) {
+        margin-right: 2rem;
+      }
+    }
+
+    &__tel {
+      margin-bottom: 1rem;
+      font-family: 'GothamPro-Bold';
+      color: #1b1a24;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
+      @media (max-width: 450px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__mail {
+      color: rgba(#737281, 0.7);
+      font-family: "GothamPro";
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-decoration: underline;
+      letter-spacing: 0.035rem;
+      @media (max-width: 540px) {
+        text-align: right;
+      }
+    }
+  }
+
+
+}

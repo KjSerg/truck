@@ -1,0 +1,37 @@
+// UTILS
+@import "reset";
+@import "mixins";
+
+
+// LIBS
+
+@import "libs/bootstrap-grid";
+@import "../../node_modules/aos/src/sass/aos";
+@import "../../node_modules/jquery-ui/themes/base/all.css";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+
+
+// BASE
+
+@import "fonts";
+@import "base";
+
+
+// COMPONENTS
+
+@import "buttons";
+@import "header/header";
+@import "header/logo";
+@import "footer";
+@import "components/calculator";
+@import "components/modal";
+
+
+//SECTIONS
+
+@import "sections/decorations";
+@import "sections/banner";
+@import "sections/manager";
+@import "sections/advantages";
+@import "sections/conditions";
+@import "sections/contacts";

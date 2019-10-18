@@ -1,0 +1,93 @@
+.section-decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  &__item {
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(#eae9ef, 0.1);
+    overflow: hidden;
+
+    &:after{
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      left: 0;
+      right: 0;
+      top: 0;
+
+      width: 1px;
+      height: 2rem;
+      background-color: #09b952;
+      animation: moveToBottom 8s infinite linear;
+    }
+
+    &:nth-child(1){
+      left: 12rem;
+      @media (max-width: 1700px) {
+        left: 10%;
+      }
+      &:after{
+        animation-delay: 1s;
+      }
+    }
+    &:nth-child(2){
+      left: 65.8rem;
+      @media (max-width: 1700px) {
+        left: 30%;
+      }
+      &:after{
+        animation-delay: 4s;
+        animation-duration: 4s;
+      }
+    }
+    &:nth-child(3){
+      right: 72.3rem;
+      @media (max-width: 1700px) {
+        right: 30%;
+      }
+      &:after{
+        animation-delay: 2s;
+        animation-duration: 6s;
+      }
+    }
+    &:nth-child(4){
+      right: 6.7rem;
+      @media (max-width: 1700px) {
+        right: 10%;
+      }
+      &:after{
+        animation-delay: 6s;
+      }
+    }
+
+  }
+}
+
+@keyframes moveToBottom {
+  0% {
+    top: -10%;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    top: 50%;
+  }
+  75% {
+    top: 75%;
+  }
+  100%{
+    top: 140%;
+  }
+}
+

@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRUCK ALLIANCE</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#09b952">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-wrap">
+            <div class="logo">
+                <div class="logo__img">
+                    <img src="img/logo-t.svg" alt="" class="">
+                </div>
+                <div class="logo-title">
+                    <strong>ruck Alliance</strong>
+                    <span>Бесплатный сервис по подбору лизинга для грузовых автомобилей и спецтехники</span>
+                </div>
+            </div>
+            <div class="header-contacts">
+                <a href="tel:88003453445" class="header-contacts__icon"><i class="zmdi zmdi-phone"></i></a>
+                <div class="header-contacts__info">
+                    <a href="tel:88003453445" class="header-contacts__tel">
+                        8 (800) 345 34 45
+                    </a>
+                    <a href="mailto:Vashemail@gmail.com" class="header-contacts__mail">Vashemail@gmail.com</a>
+                </div>
+                <a href="#callback" class="header-button button button--green fancybox">
+                    <i class="zmdi zmdi-phone"></i>
+                    <span>Обратный звонок</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <section class="banner-section" id="banner" style="background-image: url(img/bg.jpg);">
+        <div class="section-decorations">
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+        </div>
+        <div class="container">
+            <div class="banner">
+                <h2 class="banner-title">
+                    <strong>
+                        За Вас готовы побороться
+                    </strong>
+                    крупнейшие лизинговые компании
+                </h2>
+                <h3 class="banner-description">
+                    Лучшие лизинговые предложения будут предоставлены в течение 2 часов
+                </h3>
+                <form novalidate action="mail.php" method="post" data-aos="zoom-in" data-aos-duration="1500" class="banner-form form">
+                    <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
+                    <input type="hidden" name="form_subject" value="Получить расчет">
+                    <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
+
+                    <label class="banner-form-group">
+                        <input type="text" required class="banner-form__input" name="Имя" placeholder="Имя *">
+                        <i class="zmdi zmdi-account"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <i class="zmdi zmdi-phone"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <i class="zmdi zmdi-email-open"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <i class="zmdi zmdi-assignment"></i>
+                    </label>
+                    <button class="button button--green banner-form__button">
+                        Получить предложение
+                    </button>
+                </form>
+
+                <ul class="banner-list" data-aos="fade-down">
+                    <li class="banner-list__item" >
+                        <strong>Аванс от 0%</strong> (решение для крупных транспортных компаний)
+                    </li>
+                    <li class="banner-list__item" >
+                        <strong>Экспресс программы.</strong> Одобрение за 1 день с минимальным пакетом документов.
+                    </li>
+                    <li class="banner-list__item" >
+                        <strong>Скидки от официальных дилеров.</strong> Найдем технику по лучшей цене
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="manager-section" id="manager" style="background-color: #f7f7fc;">
+        <div class="section-decorations">
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+        </div>
+        <div class="manager-decorations">
+            <span class="manager-decorations-desc">
+                Мы сделаем это за вас!
+            </span>
+            <span class="manager-decorations-subtitle">
+                Лизинг
+            </span>
+            <span class="manager-decorations-title">
+                Лизинг
+            </span>
+            <span class="manager-decorations-img-left">
+                <img src="img/img-1.png" alt="">
+            </span>
+            <span class="manager-decorations-img-right">
+                <img src="img/img-2.png" alt="">
+            </span>
+        </div>
+        <div class="container">
+            <div class="manager">
+                <h4 class="manager__subtitle" data-aos="fade-down" data-aos-duration="2000">
+                    Больше не надо тратить время на поиск оптимального предложения и анализ рынка финансирования
+                </h4>
+                <h3 class="manager__title title" data-aos="zoom-in" data-aos-duration="2000">
+                    Мы это сделаем за Вас!
+                </h3>
+
+                <div class="manager-content">
+                    <div data-aos="fade-right" class="manager-content__img">
+                        <img src="img/manager-1.png" alt="">
+                    </div>
+                    <div data-aos="fade-left" class="manager-content__text">
+                        <strong>Персональный менеджер</strong> избавит Вас от общения с множеством лизинговых компаний, <strong>предложит лучшую цену,</strong> подберет технику и будет полностью сопровождать сделку на всех этапах
+                    </div>
+                </div>
+
+                <ul class="manager-list" >
+                    <li  data-aos="zoom-in-down"   data-aos-duration="1000" data-aos-delay="100" class="manager-list__item">
+                        <div class="manager-list__number">01</div>
+                        <div class="manager-list__text">
+                            Вы оставляете заявку на сайте
+                            <span>01</span>
+                        </div>
+                        <div class="manager-list__arr">
+                            <img src="img/arr-r.svg" class="svg" alt="">
+                        </div>
+                    </li>
+                    <li  data-aos="zoom-in-down"  data-aos-duration="1000" data-aos-delay="200" class="manager-list__item">
+                        <div class="manager-list__number">02</div>
+                        <div class="manager-list__text">
+                            Мы подбираем
+                            для Вас технику
+                            у официальных
+                            дилеров по спец. ценам
+                            <span>02</span>
+                        </div>
+                        <div class="manager-list__arr">
+                            <img src="img/arr-r.svg" class="svg" alt="">
+                        </div>
+                    </li>
+                    <li  data-aos="zoom-in-down" data-aos-duration="1000"  data-aos-delay="300" class="manager-list__item">
+                        <div class="manager-list__number">03</div>
+                        <div class="manager-list__text">
+                            Мы предоставляем
+                            Вам варианты лучших лизинговых
+                            предложений на
+                            рынке
+                            <span>03</span>
+                        </div>
+                        <div class="manager-list__arr">
+                            <img src="img/arr-r.svg" class="svg" alt="">
+                        </div>
+                    </li>
+                    <li  data-aos="zoom-in-down"  data-aos-duration="1000" data-aos-delay="400" class="manager-list__item">
+                        <div class="manager-list__number">04</div>
+                        <div class="manager-list__text">
+                            Заключаем
+                            договор
+                            <span>04</span>
+                        </div>
+                        <div class="manager-list__arr">
+                            <img src="img/arr-r.svg" class="svg" alt="">
+                        </div>
+                    </li>
+                    <li data-aos="zoom-in-down"  data-aos-duration="1000"  data-aos-delay="500" class="manager-list__item">
+                        <div class="manager-list__number">05</div>
+                        <div class="manager-list__text">
+                            Ваша техника
+                            работает и приносит прибыль!
+                            <span>05</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <form novalidate action="mail.php" method="post" data-aos="flip-up" data-aos-duration="1000" class="manager-form form">
+                    <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
+                    <input type="hidden" name="form_subject" value="Получить расчет">
+                    <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
+
+                    <label class="banner-form-group">
+                        <input type="text" required class="banner-form__input" name="Имя" placeholder="Имя *">
+                        <i class="zmdi zmdi-account"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <i class="zmdi zmdi-phone"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <i class="zmdi zmdi-email-open"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <i class="zmdi zmdi-assignment"></i>
+                    </label>
+                    <button class="button button--green banner-form__button">
+                        Получить предложение
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="advantages-section" id="advantages" style="background-color: #ffffff;">
+        <div class="section-decorations">
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+        </div>
+        
+        <div class="advantages-decoration">
+            <span  class="advantages-decoration-desc">
+                Наши преимущества
+            </span>
+            <span data-aos="fade-left"  data-aos-duration="1500" class="advantages-decoration-img">
+                <img src="img/img-12.png" alt="">
+            </span>
+        </div>
+        <div class="container">
+            <div class="advantages">
+                <h3 data-aos="zoom-in-left"   data-aos-duration="3000" class="advantages__title title">
+                    Наши преимущества
+                </h3>
+                <ul class="advantages-list">
+                    <li data-aos="fade-up"   data-aos-delay="100" class="advantages-list__item">
+                        <div class="advantages-list__icon">
+                            <img src="img/a1.svg" class="svg" alt="">
+                        </div>
+                        <h4 class="advantages-list__title">
+                            Удобство
+                        </h4>
+                        <div class="advantages-list__text text">
+                            <ul>
+                                <li>Закрепление персонального менеджера</li>
+                                <li>Электронный документооборот</li>
+                                <li>Работаем во всех регионах России</li>
+                                <li>Финансирование всех марок грузовых автомобилей и полуприцепов, а так же спецтехники,  строительной техники, полуприцепной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li  data-aos="fade-up"   data-aos-delay="200" class="advantages-list__item">
+                        <div class="advantages-list__icon">
+                            <img src="img/a2.svg" class="svg" alt="">
+                        </div>
+                        <h4 class="advantages-list__title">
+                            Выгода
+                        </h4>
+                        <div class="advantages-list__text text">
+                            <ul>
+                                <li>Наш сервис абсолютно бесплатный</li>
+                                <li>Гарантируем самое выгодное предложение по лизингу</li>
+                                <li>Эксклюзивные скидки от проверенных поставщиков спецтехники</li>
+                                <li>Сниженные тарифы по КАСКО</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li  data-aos="fade-up"   data-aos-delay="300" class="advantages-list__item">
+                        <div class="advantages-list__icon">
+                            <img src="img/a3.svg" class="svg" alt="">
+                        </div>
+                        <h4 class="advantages-list__title">
+                            Надежность
+                        </h4>
+                        <div class="advantages-list__text text">
+                            <ul>
+                                <li>Работаем с самыми крупными игроками на рынке финансирования</li>
+                                <li>Работаем только с официальными дилерами грузовой техники</li>
+                                <li>Информационное сопровождение договора в течении всего срока лизинга</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li  data-aos="fade-up"   data-aos-delay="400" class="advantages-list__item">
+                        <div class="advantages-list__icon">
+                            <img src="img/a4.svg" class="svg" alt="">
+                        </div>
+                        <h4 class="advantages-list__title">
+                            Экономия времени
+                        </h4>
+                        <div class="advantages-list__text text">
+                            <ul>
+                                <li>Формирование расчета  - 2 часа с момента подачи заявки</li>
+                                <li>Предварительное одобрение - 4 часа с момента отправки  полного комплекта документов</li>
+                                <li>Одобрение - 1 рабочий день (Экспресс)</li>
+                                <li>до 3 рабочих дней (Стандарт)</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="advantages-text text">
+                    <p>
+                        Лизинговые компании используют наш сервис для дополнительного привлечения клиентов, таким образом сокращая расходы на рекламу. В связи с этим Вы гарантированно получите цены ниже рынка.
+                    </p>
+                </div>
+
+                <h5 class="advantages__subtitle subtitle">
+                    Финансирование от лизинговых компаний
+                </h5>
+
+                <ul class="advantages-company-list">
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c1.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c2.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c3.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c4.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c5.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c6.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c7.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c8.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c9.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c10.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c11.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c12.png" alt="">
+                    </li>
+                    <li  class="advantages-company-list__item">
+                        <img src="img/c14.png" alt="">
+                    </li>
+                </ul>
+
+                <h5  class="advantages__subtitle subtitle">
+                    Техника, которую мы финансируем
+                </h5>
+
+                <ul class="advantages-technics">
+                    <li class="advantages-technics__item">
+                        <img src="img/t1.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t2.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t3.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t4.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t5.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t6.png" alt="">
+                    </li>
+                </ul>
+                <ul class="advantages-technics">
+                    <li class="advantages-technics__item">
+                        <img src="img/t7.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t8.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t9.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t10.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t11.png" alt="">
+                    </li>
+                </ul>
+                <ul class="advantages-technics">
+
+                    <li class="advantages-technics__item">
+                        <img src="img/t12.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t13.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t14.png" alt="">
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section class="conditions-section" id="conditions" style="background-color: #f7f7fc;">
+        <div class="section-decorations">
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+            <span class="section-decorations__item"></span>
+        </div>
+        <div class="manager-decorations">
+            <span class="manager-decorations-desc">
+                Условия финансирования
+            </span>
+            <span class="manager-decorations-subtitle">
+                Лизинг
+            </span>
+            <span class="manager-decorations-title">
+                Лизинг
+            </span>
+            <span class="manager-decorations-img-left">
+                <img src="img/img-1.png" alt="">
+            </span>
+
+        </div>
+        <div class="container">
+            <div class="conditions">
+                <h3 data-aos="zoom-in-left"   data-aos-duration="3000" class="conditions__title title">
+                    Условия финансирования
+                </h3>
+                <div class="conditions__description text">
+                    <ul>
+                        <li>
+                            Организационно-правовая форма: ООО, Акционерные общества (ПАО, ЗАО), Индивидуальные <br> предприниматели (ИП, ГКФХ)
+                        </li>
+                        <li>
+                            Работаем во всех регионах России
+                        </li>
+                        <li>
+                            Авансовый платеж от 0%
+                        </li>
+                        <li>
+                            Срок лизинга от 1 года до 5 лет
+                        </li>
+                        <li>
+                            Экспресс-программы. Одобрение по двум документам за 4 часа без оценки финансового состояния компании
+                        </li>
+                        <li>
+                            Возможность оформления сделки на новую компанию с поручительством юр. лица
+                        </li>
+                        <li>
+                            Досрочный выкуп с пересчетом %
+                        </li>
+                        <li>
+                            Любая структура платежей: равные (аннуитет), убывающие (дегрессия), сезонные, возможность отсрочки <br> первых двух ежемесячных платежей, возможность увеличения выкупного платежа до 30%
+                        </li>
+                        <li>
+                            Оформление страхования КАСКО, ОСАГО и постановка на учет в ГИБДД
+                        </li>
+                        <li>
+                            Возможность выкупа на физическое лицо
+                        </li>
+                    </ul>
+                </div>
+
+                <h4 data-aos="zoom-in-right"   data-aos-duration="1000" class="conditions__subtitle subtitle">
+                    Рассчитайте стоимость лизинга на общих условиях:
+                </h4>
+
+                <div class="calculator-wrapper">
+                    <form data-aos="fade-right"
+                          data-aos-easing="linear"
+                          data-aos-duration="1500" class="calculator conditions-calculator">
+
+                        <div class="calculator-item calculator__cost">
+                            <div class="calculator-item__title">
+                                Стоимость имущества
+                            </div>
+                            <div class="calculator-item__price">
+                                <strong class="calculator-item__val">500 000</strong> р.
+                            </div>
+                            <div data-min="500000" data-max="5000000" class="calculator-item__slider"></div>
+                        </div>
+
+                        <div class="calculator-item calculator__amount">
+                            <div class="calculator-item__title">
+                                Размер аванса
+                            </div>
+                            <div class="calculator-item__price">
+                                <strong class="calculator-item__val">49</strong> %
+                            </div>
+                            <div data-min="10" data-max="49" data-val="49" class="calculator-item__slider"></div>
+                        </div>
+
+                        <div class="calculator-item calculator__last-amount">
+                            <div class="calculator-item__title">
+                                Размер последнего платежа
+                            </div>
+                            <div class="calculator-item__price">
+                                <strong class="calculator-item__val">0</strong> %
+                            </div>
+                            <div data-min="0" data-max="40" class="calculator-item__slider"></div>
+                        </div>
+
+                        <div class="calculator-item calculator__time">
+                            <div class="calculator-item__title">
+                                Срок договора
+                            </div>
+                            <div class="calculator-item__price">
+                                <strong class="calculator-item__val">36 </strong> месяцев
+                            </div>
+                            <div data-min="12" data-max="48" data-val="36" class="calculator-item__slider"></div>
+                        </div>
+
+                        <div class="calculator-discount">
+                            <h5 class="calculator-discount__title">
+                                <strong>
+                                    Подписание сделки онлайн
+                                </strong>
+                                При подписании документов по сделке с помощью электронной цифровой подписи
+                            </h5>
+                            <div class="calculator-discount__number">
+                                <strong>-0.5%</strong>
+                                <label class="calculator-discount__input">
+                                    <input type="checkbox" name="discount" value="on">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div data-aos="fade-left"
+                         data-aos-easing="linear"
+                         data-aos-duration="1500" class="calculator-result">
+                        <h6 class="calculator-result__title">
+                            Результаты расчета
+                        </h6>
+                        <div class="calculator-result-row calculator-result--payment">
+                            <div class="calculator-result-row__name">
+                                Ежемесячный <br> платеж от
+                            </div>
+                            <div class="calculator-result-row__sum">
+                                <strong>7 726</strong> р.
+                            </div>
+                        </div>
+                        <div class="calculator-result-row calculator-result--sum">
+                            <div class="calculator-result-row__name">
+                                Сумма договора
+                            </div>
+                            <div class="calculator-result-row__sum">
+                                <strong>616 827</strong> р.
+                            </div>
+                        </div>
+                        <div class="calculator-result-row calculator-result--rise-in-price">
+                            <div class="calculator-result-row__name">
+                                Годовое удорожание
+                            </div>
+                            <div class="calculator-result-row__sum">
+                                <strong>5.84</strong> %
+                            </div>
+                        </div>
+                        <div class="calculator-result__text">
+                            Приведенные расчеты через калькулятор являются предварительными. Для точного определения процентной ставки по договору, пожалуйста, обратитесь к менеджеру
+                        </div>
+                    </div>
+                </div>
+
+                <form data-aos="fade-down"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500" novalidate action="mail.php" method="post" data-aos="flip-up" class="conditions-form form">
+                    <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
+                    <input type="hidden" name="form_subject" value="Получить расчет">
+                    <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
+
+                    <label class="banner-form-group">
+                        <input type="text" required class="banner-form__input" name="Имя" placeholder="Имя *">
+                        <i class="zmdi zmdi-account"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <i class="zmdi zmdi-phone"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <i class="zmdi zmdi-email-open"></i>
+                    </label>
+                    <label class="banner-form-group">
+                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <i class="zmdi zmdi-assignment"></i>
+                    </label>
+                    <button class="button button--green banner-form__button">
+                        Получить предложение
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-section" id="contacts">
+        <div class="contacts__img" data-aos="fade-left" data-aos-duration="900">
+            <img src="img/track-2.png" alt="">
+            <div class="contacts__logo" data-aos="zoom-in"  data-aos-duration="3000">
+                <img src="img/logo-contacts.svg" class="svg" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contacts">
+                <h4 class="contacts__title title">
+                    Контакты
+                </h4>
+                <h5 class="contacts__subtitle">
+                    Звоните:
+                </h5>
+                <div class="contacts__item">
+                    <a href="tel:88003453445" class="header-contacts__icon contacts__icon"><i class="zmdi zmdi-phone"></i></a>
+                    <a href="tel:88003453445" class="contacts__link">
+                        8 (800) 345 34 45
+                    </a>
+                </div>
+                <h5 class="contacts__subtitle">
+                    Пишите:
+                </h5>
+                <div class="contacts__item">
+                    <a href="mailto:vashemail@gmail.com" class="header-contacts__icon contacts__icon"><i class="zmdi zmdi-email-open"></i></a>
+                    <a href="mailto:vashemail@gmail.com" class="contacts__link">
+                        vashemail@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-wrap" style="background-color: #020e27;">
+    <div class="container">
+        <div class="footer">
+            <h2 class="footer__copyright">
+                <strong>ООО «Трак Альянс»</strong>
+                2019 Все права защищены
+            </h2>
+            <div class="footer__text">
+                «Вся информация, касающаяся условий лизинговых программ, носит информационный характер и не является публичной офертой, в соответствии с положениями статьи 437(2) Гражданского кодекса Российской Федерации. Для получения подробной информации, пожалуйста, обращайтесь к клиентским менеджерам «Трак Альянс»
+            </div>
+        </div>
+    </div>
+</footer>
+
+<form class="modal modal-callback" id="callback" action="mail.php" novalidate method="post">
+
+    <a href="#" class="modal__close"><i class="zmdi zmdi-close"></i></a>
+
+    <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
+    <input type="hidden" name="form_subject" value="Получить расчет">
+    <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
+
+    <div class="modal__title">
+        Обратный звонок
+    </div>
+    <div class="modal__subtitle">
+        Наш менеджер свяжеться с Вами через 5 минут
+    </div>
+    <label class="modal-group">
+        <input required type="tel" class="modal__input" name="Телефон" placeholder="Телефон">
+        <i class="zmdi zmdi-phone"></i>
+    </label>
+    <label class="modal-group">
+        <input required type="text" class="modal__input"  name="Имя" placeholder="Имя">
+        <i class="zmdi zmdi-account"></i>
+    </label>
+    <button class="button button--green modal__button">
+        Отправить
+    </button>
+</form>
+
+<div class="modal success" id="success">
+
+    <a href="#" class="modal__close"><i class="zmdi zmdi-close"></i></a>
+
+    <div class="modal__title modal__title--name-js">
+       Спасибо!
+    </div>
+    <div class="modal__subtitle">
+        Наш менеджер свяжеться с Вами через 5 минут
+    </div>
+</div>
+
+</body>
+<script src="js/bundle.js"></script>
+
+</html>
