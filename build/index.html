@@ -498,62 +498,37 @@
                 <div class="calculator-wrapper">
                     <form data-aos="fade-right"
                           data-aos-easing="linear"
+                          data-rate="0.15"
                           data-aos-duration="1500" class="calculator conditions-calculator">
 
-                        <div class="calculator-item calculator__cost">
+                        <div class="calculator-item ">
                             <div class="calculator-item__title">
                                 Стоимость имущества
                             </div>
                             <div class="calculator-item__price">
                                 <strong class="calculator-item__val">500 000</strong> р.
                             </div>
-                            <div data-min="500000" data-max="5000000" class="calculator-item__slider"></div>
+                            <div data-min="270000" data-max="50000000" data-val="500000" class="calculator-item__slider calculator__cost"></div>
                         </div>
 
-                        <div class="calculator-item calculator__amount">
+                        <div class="calculator-item ">
                             <div class="calculator-item__title">
                                 Размер аванса
                             </div>
                             <div class="calculator-item__price">
                                 <strong class="calculator-item__val">49</strong> %
                             </div>
-                            <div data-min="10" data-max="49" data-val="49" class="calculator-item__slider"></div>
+                            <div data-min="10" data-max="49" data-val="49" class="calculator-item__slider calculator__amount"></div>
                         </div>
 
-                        <div class="calculator-item calculator__last-amount">
-                            <div class="calculator-item__title">
-                                Размер последнего платежа
-                            </div>
-                            <div class="calculator-item__price">
-                                <strong class="calculator-item__val">0</strong> %
-                            </div>
-                            <div data-min="0" data-max="40" class="calculator-item__slider"></div>
-                        </div>
-
-                        <div class="calculator-item calculator__time">
+                        <div class="calculator-item ">
                             <div class="calculator-item__title">
                                 Срок договора
                             </div>
                             <div class="calculator-item__price">
                                 <strong class="calculator-item__val">36 </strong> месяцев
                             </div>
-                            <div data-min="12" data-max="48" data-val="36" class="calculator-item__slider"></div>
-                        </div>
-
-                        <div class="calculator-discount">
-                            <h5 class="calculator-discount__title">
-                                <strong>
-                                    Подписание сделки онлайн
-                                </strong>
-                                При подписании документов по сделке с помощью электронной цифровой подписи
-                            </h5>
-                            <div class="calculator-discount__number">
-                                <strong>-0.5%</strong>
-                                <label class="calculator-discount__input">
-                                    <input type="checkbox" name="discount" value="on">
-                                    <span></span>
-                                </label>
-                            </div>
+                            <div data-min="12" data-max="48" data-val="36" class="calculator-item__slider calculator__time"></div>
                         </div>
 
                     </form>
@@ -599,6 +574,14 @@
                     <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
                     <input type="hidden" name="form_subject" value="Получить расчет">
                     <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
+
+                    <input type="hidden" class="calc-val-cost" name="Стоимость имущества" value="">
+                    <input type="hidden" class="calc-val-amount" name="Размер аванса" value="">
+                    <input type="hidden" class="calc-val-time" name="Срок договора" value="">
+
+                    <input type="hidden" class="calc-val-payment" name="Ежемесячный платеж от" value="">
+                    <input type="hidden" class="calc-val-sum" name="Сумма договора" value="">
+                    <input type="hidden" class="calc-val-appreciation" name="Годовое удорожание" value="">
 
                     <label class="banner-form-group">
                         <input type="text" required class="banner-form__input" name="Имя" placeholder="Имя *">
