@@ -20,15 +20,15 @@
 <header class="header">
     <div class="container">
         <div class="header-wrap">
-            <div class="logo">
+            <a href="/" class="logo">
                 <div class="logo__img">
                     <img src="img/logo-t.svg" alt="" class="">
                 </div>
                 <div class="logo-title">
-                    <strong>ruck Alliance</strong>
+                    <strong>Truck Alliance</strong>
                     <span>Бесплатный сервис по подбору лизинга для грузовых автомобилей и спецтехники</span>
                 </div>
-            </div>
+            </a>
             <div class="header-contacts">
                 <a href="tel:88003453445" class="header-contacts__icon"><i class="zmdi zmdi-phone"></i></a>
                 <div class="header-contacts__info">
@@ -65,7 +65,7 @@
                 <h3 class="banner-description">
                     Лучшие лизинговые предложения будут предоставлены в течение 2 часов
                 </h3>
-                <form novalidate action="mail.php" method="post" data-aos="zoom-in" data-aos-duration="1500" class="banner-form form">
+                <form novalidate action="mail.php" method="post"  class="banner-form form">
                     <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
                     <input type="hidden" name="form_subject" value="Получить расчет">
                     <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
@@ -75,15 +75,15 @@
                         <i class="zmdi zmdi-account"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <input type="tel" data-mask="+7(999) 999-9999"  required class="banner-form__input" name="Телефон" placeholder="Телефон *">
                         <i class="zmdi zmdi-phone"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <input type="email" class="banner-form__input" name="Email"  data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
                         <i class="zmdi zmdi-email-open"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <input type="text" class="banner-form__input" pattern="[A-Za-zА-Яа-яЁё0-9]{,12}" required name="ИНН" placeholder="ИНН" data-max="12" data-min="10">
                         <i class="zmdi zmdi-assignment"></i>
                     </label>
                     <button class="button button--green banner-form__button">
@@ -126,7 +126,7 @@
                 <img src="img/img-1.png" alt="">
             </span>
             <span class="manager-decorations-img-right">
-                <img src="img/img-2.png" alt="">
+                <img src="img/img_3.png" alt="">
             </span>
         </div>
         <div class="container">
@@ -139,16 +139,16 @@
                 </h3>
 
                 <div class="manager-content">
-                    <div data-aos="fade-right" class="manager-content__img">
+                    <div  class="manager-content__img">
                         <img src="img/manager-1.png" alt="">
                     </div>
-                    <div data-aos="fade-left" class="manager-content__text">
+                    <div  class="manager-content__text">
                         <strong>Персональный менеджер</strong> избавит Вас от общения с множеством лизинговых компаний, <strong>предложит лучшую цену,</strong> подберет технику и будет полностью сопровождать сделку на всех этапах
                     </div>
                 </div>
 
-                <ul class="manager-list" >
-                    <li  data-aos="zoom-in-down"   data-aos-duration="1000" data-aos-delay="100" class="manager-list__item">
+                <ul class="manager-list" data-aos="zoom-in-down"   data-aos-duration="1000">
+                    <li  class="manager-list__item">
                         <div class="manager-list__number">01</div>
                         <div class="manager-list__text">
                             Вы оставляете заявку на сайте
@@ -158,7 +158,7 @@
                             <img src="img/arr-r.svg" class="svg" alt="">
                         </div>
                     </li>
-                    <li  data-aos="zoom-in-down"  data-aos-duration="1000" data-aos-delay="200" class="manager-list__item">
+                    <li   class="manager-list__item">
                         <div class="manager-list__number">02</div>
                         <div class="manager-list__text">
                             Мы подбираем
@@ -171,7 +171,7 @@
                             <img src="img/arr-r.svg" class="svg" alt="">
                         </div>
                     </li>
-                    <li  data-aos="zoom-in-down" data-aos-duration="1000"  data-aos-delay="300" class="manager-list__item">
+                    <li  class="manager-list__item">
                         <div class="manager-list__number">03</div>
                         <div class="manager-list__text">
                             Мы предоставляем
@@ -184,7 +184,7 @@
                             <img src="img/arr-r.svg" class="svg" alt="">
                         </div>
                     </li>
-                    <li  data-aos="zoom-in-down"  data-aos-duration="1000" data-aos-delay="400" class="manager-list__item">
+                    <li class="manager-list__item">
                         <div class="manager-list__number">04</div>
                         <div class="manager-list__text">
                             Заключаем
@@ -195,7 +195,7 @@
                             <img src="img/arr-r.svg" class="svg" alt="">
                         </div>
                     </li>
-                    <li data-aos="zoom-in-down"  data-aos-duration="1000"  data-aos-delay="500" class="manager-list__item">
+                    <li  class="manager-list__item">
                         <div class="manager-list__number">05</div>
                         <div class="manager-list__text">
                             Ваша техника
@@ -205,7 +205,7 @@
                     </li>
                 </ul>
 
-                <form novalidate action="mail.php" method="post" data-aos="flip-up" data-aos-duration="1000" class="manager-form form">
+                <form novalidate action="mail.php" method="post"  class="manager-form form">
                     <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
                     <input type="hidden" name="form_subject" value="Получить расчет">
                     <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
@@ -215,15 +215,15 @@
                         <i class="zmdi zmdi-account"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <input type="tel" data-mask="+7(999) 999-9999"  required class="banner-form__input" name="Телефон" placeholder="Телефон *">
                         <i class="zmdi zmdi-phone"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <input type="email" class="banner-form__input" name="Email"  data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
                         <i class="zmdi zmdi-email-open"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <input type="text" class="banner-form__input" required name="ИНН" placeholder="ИНН" data-max="12" data-min="10">
                         <i class="zmdi zmdi-assignment"></i>
                     </label>
                     <button class="button button--green banner-form__button">
@@ -246,7 +246,7 @@
                 Наши преимущества
             </span>
             <span data-aos="fade-left"  data-aos-duration="1500" class="advantages-decoration-img">
-                <img src="img/img-12.png" alt="">
+                <img src="img/img_4.png" alt="">
             </span>
         </div>
         <div class="container">
@@ -255,7 +255,7 @@
                     Наши преимущества
                 </h3>
                 <ul class="advantages-list">
-                    <li data-aos="fade-up"   data-aos-delay="100" class="advantages-list__item">
+                    <li  class="advantages-list__item">
                         <div class="advantages-list__icon">
                             <img src="img/a1.svg" class="svg" alt="">
                         </div>
@@ -271,7 +271,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li  data-aos="fade-up"   data-aos-delay="200" class="advantages-list__item">
+                    <li  class="advantages-list__item">
                         <div class="advantages-list__icon">
                             <img src="img/a2.svg" class="svg" alt="">
                         </div>
@@ -287,7 +287,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li  data-aos="fade-up"   data-aos-delay="300" class="advantages-list__item">
+                    <li  class="advantages-list__item">
                         <div class="advantages-list__icon">
                             <img src="img/a3.svg" class="svg" alt="">
                         </div>
@@ -302,7 +302,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li  data-aos="fade-up"   data-aos-delay="400" class="advantages-list__item">
+                    <li  class="advantages-list__item">
                         <div class="advantages-list__icon">
                             <img src="img/a4.svg" class="svg" alt="">
                         </div>
@@ -407,22 +407,30 @@
                         <img src="img/t9.png" alt="">
                     </li>
                     <li class="advantages-technics__item">
-                        <img src="img/t10.png" alt="">
-                    </li>
-                    <li class="advantages-technics__item">
                         <img src="img/t11.png" alt="">
                     </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/t13.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/45546.png" alt="">
+                    </li>
+
                 </ul>
                 <ul class="advantages-technics">
 
                     <li class="advantages-technics__item">
                         <img src="img/t12.png" alt="">
                     </li>
-                    <li class="advantages-technics__item">
-                        <img src="img/t13.png" alt="">
-                    </li>
+
                     <li class="advantages-technics__item">
                         <img src="img/t14.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/Layer_795.png" alt="">
+                    </li>
+                    <li class="advantages-technics__item">
+                        <img src="img/Layer_794.png" alt="">
                     </li>
                 </ul>
 
@@ -496,10 +504,7 @@
                 </h4>
 
                 <div class="calculator-wrapper">
-                    <form data-aos="fade-right"
-                          data-aos-easing="linear"
-                          data-rate="0.15"
-                          data-aos-duration="1500" class="calculator conditions-calculator">
+                    <form  data-rate="0.179" class="calculator conditions-calculator">
 
                         <div class="calculator-item ">
                             <div class="calculator-item__title">
@@ -532,9 +537,7 @@
                         </div>
 
                     </form>
-                    <div data-aos="fade-left"
-                         data-aos-easing="linear"
-                         data-aos-duration="1500" class="calculator-result">
+                    <div  class="calculator-result">
                         <h6 class="calculator-result__title">
                             Результаты расчета
                         </h6>
@@ -568,9 +571,7 @@
                     </div>
                 </div>
 
-                <form data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500" novalidate action="mail.php" method="post" data-aos="flip-up" class="conditions-form form">
+                <form  novalidate action="mail.php" method="post"  class="conditions-form form">
                     <input type="hidden" name="project_name" value="TRUCK ALLIANCE">
                     <input type="hidden" name="form_subject" value="Получить расчет">
                     <input type="hidden" name="admin_email" value="kalandzhii.s@profmk.ru">
@@ -588,15 +589,15 @@
                         <i class="zmdi zmdi-account"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="tel" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
+                        <input type="tel" data-mask="+7(999) 999-9999" required class="banner-form__input" name="Телефон" placeholder="Телефон *">
                         <i class="zmdi zmdi-phone"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="Email" required data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
+                        <input type="email" class="banner-form__input" name="Email"  data-reg="^[A-z0-9._-]+@[A-z0-9.-]+\.[A-z]{2,4}$" placeholder="Email *">
                         <i class="zmdi zmdi-email-open"></i>
                     </label>
                     <label class="banner-form-group">
-                        <input type="text" class="banner-form__input" name="ИНН" placeholder="ИНН">
+                        <input type="text" class="banner-form__input" required name="ИНН" placeholder="ИНН" data-max="12" data-min="10">
                         <i class="zmdi zmdi-assignment"></i>
                     </label>
                     <button class="button button--green banner-form__button">
@@ -609,8 +610,8 @@
     <section class="contacts-section" id="contacts">
         <div class="contacts__img" data-aos="fade-left" data-aos-duration="900">
             <img src="img/track-2.png" alt="">
-            <div class="contacts__logo" data-aos="zoom-in"  data-aos-duration="3000">
-                <img src="img/logo-contacts.svg" class="svg" alt="">
+            <div class="contacts__logo">
+                <img src="img/logo-contacts-1.svg" class="svg" alt="">
             </div>
         </div>
 
@@ -671,7 +672,7 @@
         Наш менеджер свяжеться с Вами через 5 минут
     </div>
     <label class="modal-group">
-        <input required type="tel" class="modal__input" name="Телефон" placeholder="Телефон">
+        <input required type="tel" data-mask="+7(999) 999-9999"  class="modal__input" name="Телефон" placeholder="Телефон">
         <i class="zmdi zmdi-phone"></i>
     </label>
     <label class="modal-group">

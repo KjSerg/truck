@@ -1,3 +1,4 @@
+import 'jquery.maskedinput/src/jquery.maskedinput';
 
 export const validation = () => {
     $('form').on('submit', function (e) {
@@ -15,6 +16,9 @@ export const validation = () => {
                 inputReg = new RegExp(thsInput.data('reg')),
                 inputTest = inputReg.test(thsInputVal);
 
+            const max = thsInput.attr('data-max');
+            const min = thsInput.attr('data-min');
+
             let wrapper = (is_modal) ? thsInput.closest('.modal-group') : thsInput.closest('.banner-form-group');
 
             if (thsInput.attr('required')) {
@@ -30,6 +34,15 @@ export const validation = () => {
                             wrapper.addClass('error');
                             thsInput.focus();
                         } else {
+                            wrapper.removeClass('error');
+                        }
+                    }
+                    if(max && min) {
+                        if (thsInputVal.length <= min ) {
+                            test = false;
+                            wrapper.addClass('error');
+                            thsInput.focus();
+                        }else {
                             wrapper.removeClass('error');
                         }
                     }
@@ -59,8 +72,44 @@ export const validation = () => {
     });
 };
 
+export const maxLenghtInput = () =>{
+    const $inputs = $('input');
+
+    $inputs.each(function () {
+
+        const $this = $(this);
+
+        const max = Number($this.attr('data-max'));
+        const min = $this.attr('data-min');
+
+        if(max) {
+            let value = '';
+            $this.on('keypress input', function(event){
+                const $ths = $(this);
+                const val = $ths.val();
+                const length = val.length;
+
+                if(length <= max) value = val;
+
+                if(length >= max) {
+                    $ths.val(value);
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        }
+
+    });
+};
+
 export const blockCharacters = () => {
     const $inputTel = $('input[type="tel"]');
+
+    $inputTel.each(function () {
+        const $this = $(this);
+        const mask = $this.attr('data-mask');
+        $this.mask(mask);
+    });
 
     $inputTel.on('keypress', e => {
         if (e.keyCode < 48 || e.keyCode > 57) {
@@ -68,4 +117,6 @@ export const blockCharacters = () => {
         }
     });
 };
+
+
 

@@ -1,5 +1,5 @@
 import { detectBrowser } from './_helpers';
-import { validation, blockCharacters } from './modules/_validation';
+import { validation, blockCharacters, maxLenghtInput } from './modules/_validation';
 import './modules/_svg';
 import AOS from 'aos';
 import 'jquery-ui/ui/widgets/slider';
@@ -23,6 +23,7 @@ class Application {
     static initializeModules() {
         validation();
         blockCharacters();
+        maxLenghtInput();
         const _Calculator = new Calculator();
     };
 

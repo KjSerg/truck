@@ -57,7 +57,7 @@
       flex-direction: column;
     }
     @media (max-width: 400px) {
-      flex-direction: row;
+      //flex-direction: row;
     }
     &__icon {
       position: relative;
@@ -118,7 +118,7 @@
         margin-bottom: 1rem;
       }
       @media (max-width: 400px) {
-        margin-right: 2rem;
+        //margin-right: 2rem;
       }
     }
 
@@ -130,7 +130,9 @@
       font-weight: 700;
       letter-spacing: 0.05rem;
       @media (max-width: 450px) {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        text-align: right;
       }
     }
 

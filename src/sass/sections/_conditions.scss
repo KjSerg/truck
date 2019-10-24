@@ -3,6 +3,9 @@
   &-section {
     padding-top: 10.9rem;
     padding-bottom: 10rem;
+    .manager-decorations-subtitle {
+      top: 2rem;
+    }
     .manager-decorations-title {
       transform: rotate(-90deg);
       right: -4.5rem;
@@ -20,5 +23,7 @@
   &__subtitle {
     margin-bottom: 4rem;
   }
+
+
 
 }

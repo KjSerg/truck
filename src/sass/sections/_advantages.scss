@@ -33,18 +33,21 @@
 
     &-img {
       position: absolute;
-      bottom: 3rem;
-      right: 0;
-      width: 69.8rem;
-      height: 36.8rem;
-      @media (max-width: 1600px) {
-        right: -20rem;
+      bottom: 1.7rem;
+      right: 2.6rem;
+      width: 55.4rem;
+      height: 45.4rem;
+      @media (max-width: 1800px) {
+        right: -10rem;
       }
-      @media (max-width: 1300px) {
-        right: -25rem;
+      @media (max-width: 1550px) {
+        right: -15rem;
+      }
+      @media (max-width: 1450px) {
+        right: -30rem;
       }
       @media (max-width: 1200px) {
-        right: -36rem;
+        display: none;
       }
       @media (max-width: 800px) {
         display: none;
@@ -249,10 +252,19 @@
     @media (max-width: 800px) {
       justify-content: space-between;
     }
+    @media (max-width: 450px) {
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    &:nth-last-child(2) {
+      .advantages-technics__item {
+        margin-right: 0rem;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
       .advantages-technics__item {
-        margin-right: 9rem;
+        margin-right: 7rem;
         @media (max-width: 800px) {
           margin-right: 0;
         }
@@ -277,8 +289,18 @@
         height: 5rem;
         margin: 1rem;
       }
+      @media (max-width: 450px) {
+        width: 15rem;
+        height: 12rem;
+      }
+      @media (max-width: 375px) {
+        width: 16rem;
+      }
       img{
         max-width: 100%;
+        @media (max-width: 800px) {
+          max-height: 100%;
+        }
       }
       &:first-child {
         justify-content: flex-start;
